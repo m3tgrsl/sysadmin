@@ -93,6 +93,10 @@ Bu yazımda GNU/Linux sistem yönetimi çalışmalarımda öğrendiklerimi peki�
 
 OwnCloud, açık kaynak kodlu dosya barındırma sistemidir. Kullanıcılar OwnCloud'u özel bir sunucu içerisine kurarak hiçbir ücret ödemeden (yazılıma) kullanabilir.
 
+<p><a href="https://tr.wikipedia.org/wiki/OwnCloud ">wiki</a></p>
+
+<p><a href="https://owncloud.com/faq/">owncloud</a></p>
+	    
     </div>
     
     <div class="container mt-3">
@@ -111,6 +115,7 @@ OwnCloud, açık kaynak kodlu dosya barındırma sistemidir. Kullanıcılar OwnC
 <ul><li> Ön yükleme diskinde ise İşletim sistemi, işletim sistemi sürümü, disk türü ve disk boyutunu seçiyoruz. Ben İşletim sistemi olarak Centos sürümü olarak Centos 7'yi, disk türü olarak standart kalıcı disk'i ve boyut olarak da 20 GB disk boyutu verdim.</li></ul>
 <ul><li> Güvenlik duvarı izinlerimiz de verelim ve makinemizi oluşturalım.</li></ul>
 
+	    <p><a href="https://cloud.google.com/">Google Cloud</a></p>
 
     </div>
 
@@ -441,6 +446,8 @@ Dependency Installed:
 <ul><li>"systemctl enable mariadb.service" komutunu MariaDB servisini sistem önyüklemesi gerçekleştiğinde çalışacak şekilde ayarlamak için veriyoruz.</li></ul>
 <ul><li>"systemctl status mariadb.service" komutunu MariaDB servisini durumunu öğrenmek için veriyoruz.</li></ul>
 
+	    <p><a href="https://httpd.apache.org/docs/2.4/install.html">Apache server kurlumu</a></p>
+
 
 <pre><code class="language-bash">
 [root@owncloud m3t]# systemctl start mariadb.service
@@ -480,6 +487,9 @@ Dec 21 19:05:01 owncloud systemd[1]: Started MariaDB database server.
 <ul><li>"Remove test database and access to it? [Y/n]" test veritabanı kaldırılsın ve ona erişim sağlansın mı sorusuna evet diyorum.</li></ul>
 <ul><li>"Reload privilege tables now? [Y/n] " privilege tablosunu güncellensin mi sorusuna evet diyorum.</li></ul>
 
+	    <p><a href="https://mariadb.com/kb/en/mysql_secure_installation/">Mariadb secure installation</a></p>
+
+	    
 
 <pre><code class="language-bash">
 [root@owncloud m3t]# mysql_secure_installation
@@ -649,7 +659,9 @@ Bye
 <ul><li>"sudo yum clean all " Yum reposunu temizliyoruz.</li></ul>
 <ul><li>"sudo yum install owncloud-complete-files" OwncCloud kurulumunu gerçekleştiriyoruz.</li></ul>
 
+<p><a href="https://download.owncloud.org/download/repositories/production/owncloud">owncloud kurlumu</a></p>
 
+<p><a href="https://owncloud.com/download-server/">owncloud kurulum dosyası</a></p>
 
 <pre><code class="language-bash">
 [root@owncloud m3t]#sudo rpm --import https://download.owncloud.org/download/repositories/production/CentOS_7/repodata/repomd.xml.key
@@ -820,6 +832,7 @@ SELinux konfigürasyonu yapmak için kaynakdaki komutları verirken semanage ara
 <ul><li>httpd_sys_rw_content_t '/var/www/html/owncloud/apps-external(/.*)?'</li></ul>
 <ul><li>restorecon -Rv '/var/www/html/owncloud/'</li></ul> 
 
+<p><a href="https://doc.owncloud.com/server/admin_manual/installation/selinux_configuration.html">selinux</a></p>
 
 
 <pre><code class="language-bash">
