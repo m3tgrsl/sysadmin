@@ -902,7 +902,7 @@ Dependency Installed:
                                                                                                              
 <pre><code class="language-bash">
 
-([root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/data')
+([root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/data'
 [root@owncloud m3t]# restorecon '/var/www/html/owncloud/data'
 [root@owncloud m3t]# semanage fcontext -a -t httpd_sys_rw_content_t '/var/www/html/owncloud/config'
 [root@owncloud m3t]# restorecon '/var/www/html/owncloud/config'
